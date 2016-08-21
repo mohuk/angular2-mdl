@@ -4,6 +4,7 @@
 /** Map relative paths to URLs. */
 var map = {
     'angular2-mdl': 'components',
+    'web-animations-js': 'vendor/web-animations-js'
 };
 /** User packages configuration. */
 var packages = {
@@ -11,7 +12,8 @@ var packages = {
         format: 'cjs',
         defaultExtension: 'js',
         main: 'index.js'
-    }
+    },
+    'web-animations-js': { main: 'web-animations.min.js' }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
