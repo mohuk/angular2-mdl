@@ -12,6 +12,7 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     pattern: any;
     errorMessage: any;
     disabled: boolean;
+    required: boolean;
     isFloatingLabel: boolean;
     placeholder: string;
     rows: number;
