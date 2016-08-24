@@ -1,8 +1,11 @@
 import { ViewContainerRef } from '@angular/core';
 import { MdlSnackbarService } from '../../components';
-export declare class SnackbarDemo {
+import { Router, ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+import { AbstractDemoComponent } from './../abstract-demo.component';
+export declare class SnackbarDemo extends AbstractDemoComponent {
     private mdlSnackbarService;
     private vcRef;
-    constructor(mdlSnackbarService: MdlSnackbarService, vcRef: ViewContainerRef);
+    constructor(router: Router, route: ActivatedRoute, titleService: Title, mdlSnackbarService: MdlSnackbarService, vcRef: ViewContainerRef);
     showSnackbar(): void;
 }
