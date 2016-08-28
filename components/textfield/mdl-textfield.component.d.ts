@@ -10,6 +10,8 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     type: any;
     label: any;
     pattern: any;
+    name: any;
+    id: any;
     errorMessage: any;
     disabled: boolean;
     required: boolean;
