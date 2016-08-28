@@ -16,20 +16,26 @@
 /* ==========  Color Palettes  ========== */
 /* colors.scss */
 .router-outlet {
-  flex-grow: 1;
-  flex-shrink: 0;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-left: 1rem;
   margin-right: 1rem; }
 
 main {
+  display: -ms-flexbox !important;
   display: flex !important;
-  flex-direction: row; }
+  -ms-flex-direction: row;
+      flex-direction: row; }
 
 .main-footer {
-  flex-grow: 1; }
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
 
 footer {
-  flex-shrink: 0; }
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 nav a[routerLink] {
   padding: 8px 40px !important;
@@ -49,14 +55,20 @@ h4 {
     padding-left: 72px; } }
 
 .app-main-content {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .main-content {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  flex-grow: 1; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
 
 [prism] {
   background: #f5f2f0;
