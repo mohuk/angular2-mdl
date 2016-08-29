@@ -5,7 +5,7 @@
   <title>Angular2Mdl</title>
   <base href="/angular2-mdl/">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link href="main.css" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" id="main-css"/>
   <link href="prism.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -26,6 +26,13 @@
 			 display:inline-block;
 			 padding: 0 1em;
 		 }
+
+      @media screen and (max-width: 1024px) {
+        .mdl-layout__drawer-button {
+          line-height: 47px;
+        }
+      }
+
    </style>
 </head>
 <body>

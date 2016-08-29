@@ -11097,11 +11097,3 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-grid.mdl-grid--no-spacing > .mdl-cell--11-offset, .mdl-grid.mdl-grid--no-spacing >
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
-
-@media screen and (min-width: 1025px) {
-  .mdl-layout__drawer-button {
-    line-height: 52px; } }
-
-@media screen and (max-width: 1024px) {
-  .mdl-layout__drawer-button {
-    line-height: 50px; } }
