@@ -9,6 +9,8 @@ export declare class ReactiveFormsDemo extends AbstractDemoComponent implements 
     form: FormGroup;
     firstName: FormControl;
     lastName: FormControl;
+    email: FormControl;
+    email2: FormControl;
     constructor(router: Router, route: ActivatedRoute, titleService: Title, fb: FormBuilder);
     ngOnInit(): void;
     onSubmit(): void;

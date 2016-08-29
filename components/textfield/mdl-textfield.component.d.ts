@@ -11,10 +11,11 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     label: any;
     pattern: any;
     name: any;
-    id: any;
+    id: string;
     errorMessage: any;
     disabled: boolean;
     required: boolean;
+    disableNativeValidityChecking: any;
     isFloatingLabel: boolean;
     placeholder: string;
     rows: number;
