@@ -1,8 +1,10 @@
-import { Renderer, ElementRef, OnChanges, DoCheck } from '@angular/core';
+import { Renderer, ElementRef, OnChanges, DoCheck, OpaqueToken } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
+export declare const DISABLE_NATIVE_VALIDITY_CHECKING: OpaqueToken;
 export declare class MdlTextFieldComponent implements ControlValueAccessor, OnChanges, DoCheck {
     private renderer;
     private elmRef;
+    private nativeCheckGlobalDisabled;
     private value_;
     private el;
     private inputEl;
@@ -21,7 +23,7 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     rows: number;
     maxrows: number;
     icon: string;
-    constructor(renderer: Renderer, elmRef: ElementRef);
+    constructor(renderer: Renderer, elmRef: ElementRef, nativeCheckGlobalDisabled: Boolean);
     writeValue(value: any): void;
     private onTouchedCallback;
     private onChangeCallback;
