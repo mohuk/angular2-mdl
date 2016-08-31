@@ -7,6 +7,8 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     private nativeCheckGlobalDisabled;
     private value_;
     private el;
+    private blurEmitter;
+    private focusEmitter;
     private inputEl;
     value: any;
     type: any;
@@ -17,12 +19,13 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     errorMessage: any;
     disabled: boolean;
     required: boolean;
-    disableNativeValidityChecking: any;
+    autofocus: boolean;
     isFloatingLabel: boolean;
     placeholder: string;
     rows: number;
     maxrows: number;
     icon: string;
+    disableNativeValidityChecking: any;
     constructor(renderer: Renderer, elmRef: ElementRef, nativeCheckGlobalDisabled: Boolean);
     writeValue(value: any): void;
     private onTouchedCallback;
@@ -32,8 +35,8 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     ngOnChanges(): void;
     ngDoCheck(): void;
     protected setFocus(): void;
-    protected onFocus(): void;
-    protected onBlur(): void;
+    protected onFocus(event: FocusEvent): void;
+    protected onBlur(event: FocusEvent): void;
     private checkDisabled();
     private checkValidity();
     private checkDirty();
