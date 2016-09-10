@@ -6,4 +6,5 @@ export declare class ToggleDemo extends AbstractDemoComponent {
     protected checkbox2: boolean;
     protected radioOption: string;
     constructor(router: Router, route: ActivatedRoute, titleService: Title);
+    onChange(newValue: any): void;
 }

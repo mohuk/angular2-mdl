@@ -20,7 +20,5 @@ export declare class MdlSliderComponent implements ControlValueAccessor {
     onMouseUp(event: any): void;
     onMouseDown(event: MouseEvent): void;
 }
-/** @deprecated */
-export declare const MDL_SLIDER_DIRECTIVES: typeof MdlSliderComponent[];
 export declare class MdlSliderModule {
 }

@@ -28,7 +28,5 @@ export declare class MdlCardBorderDirective {
 }
 export declare class MdlCardExpandDirective {
 }
-/** @deprecated */
-export declare const MDL_CARD_DIRECTIVES: (typeof MdlCardComponent | typeof MdlCardTitleComponent)[];
 export declare class MdlCardModule {
 }

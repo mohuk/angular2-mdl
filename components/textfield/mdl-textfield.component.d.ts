@@ -42,7 +42,5 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     private checkDirty();
     keydownTextarea($event: KeyboardEvent): void;
 }
-/** @deprecated */
-export declare const MDL_TEXT_FIELD_DIRECTIVES: typeof MdlTextFieldComponent[];
 export declare class MdlTextFieldModule {
 }

@@ -19,7 +19,5 @@ export declare class MdlButtonComponent implements OnChanges {
     onMouseLeave(): void;
     blurIt(): void;
 }
-/** @deprecated */
-export declare const MDL_BUTTON_DIRECTIVES: typeof MdlButtonComponent[];
 export declare class MdlButtonModule {
 }

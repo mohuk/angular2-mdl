@@ -1,6 +1,7 @@
-import { ApplicationRef } from '@angular/core';
+import { ApplicationRef, ApplicationInitStatus } from '@angular/core';
 export declare class Angular2MdlAppModule {
     private appRef;
-    constructor(appRef: ApplicationRef);
+    private appStatus;
+    constructor(appRef: ApplicationRef, appStatus: ApplicationInitStatus);
     ngDoBootstrap(): void;
 }

@@ -1,6 +1,7 @@
 import { OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { AbstractDemoComponent } from './../abstract-demo.component';

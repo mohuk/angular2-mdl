@@ -1,4 +1,4 @@
-import { ElementRef, Renderer, OnInit, OnDestroy } from '@angular/core';
+import { ElementRef, EventEmitter, Renderer, OnInit, OnDestroy } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 export declare class MdlRadioGroupRegisty {
     private radioComponents;
@@ -13,6 +13,7 @@ export declare class MdlRadioComponent implements ControlValueAccessor, OnInit, 
     name: string;
     formControlName: string;
     value: any;
+    change: EventEmitter<any>;
     optionValue: any;
     checked: boolean;
     private el;
@@ -32,7 +33,5 @@ export declare class MdlRadioComponent implements ControlValueAccessor, OnInit, 
     private checkName();
     private throwNameError();
 }
-/** @deprecated */
-export declare const MDL_RADIO_DIRECTIVES: typeof MdlRadioComponent[];
 export declare class MdlRadioModule {
 }

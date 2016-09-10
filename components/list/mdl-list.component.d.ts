@@ -46,7 +46,5 @@ export declare class MdlListItemIconDirective {
 }
 export declare class MdlListItemAvatarDirective {
 }
-/** @deprecated */
-export declare const MDL_LIST_DIRECTIVES: (typeof MdlListComponent | typeof MdlListItemComponent | typeof MdlListItemPrimaryContentComponent | typeof MdlListItemSecondaryContentComponent | typeof MdlListItemSecondaryActionComponent | typeof MdlListItemSubTitleComponent | typeof MdlListItemSecondaryInfoComponent | typeof MdlListItemTextBodyComponent)[];
 export declare class MdlListModule {
 }

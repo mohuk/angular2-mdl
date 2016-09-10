@@ -13,7 +13,5 @@ export declare class MdlShadowDirective implements OnChanges {
         [key: string]: SimpleChange;
     }): void;
 }
-/** @deprecated */
-export declare const MDL_SHADOW_DIRECTIVES: typeof MdlShadowDirective[];
 export declare class MdlShadowModule {
 }
