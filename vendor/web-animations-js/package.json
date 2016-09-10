@@ -1,16 +1,8 @@
 {
   "_args": [
     [
-      {
-        "raw": "web-animations-js@^2.2.2",
-        "scope": null,
-        "escapedName": "web-animations-js",
-        "name": "web-animations-js",
-        "rawSpec": "^2.2.2",
-        "spec": ">=2.2.2 <3.0.0",
-        "type": "range"
-      },
-      "/Users/mseemann/Documents/Projekte/github/angular2-mdl"
+      "web-animations-js@^2.2.2",
+      "/Users/mseemannmbpr/Documents/Projekte/github/angular2-mdl"
     ]
   ],
   "_from": "web-animations-js@>=2.2.2 <3.0.0",
@@ -24,17 +16,16 @@
     "tmp": "tmp/web-animations-js-2.2.2.tgz_1470201697257_0.8265831270255148"
   },
   "_npmUser": {
-    "name": "alancutter",
-    "email": "alancutter@chromium.org"
+    "email": "alancutter@chromium.org",
+    "name": "alancutter"
   },
   "_npmVersion": "2.14.20",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "web-animations-js@^2.2.2",
-    "scope": null,
-    "escapedName": "web-animations-js",
     "name": "web-animations-js",
+    "raw": "web-animations-js@^2.2.2",
     "rawSpec": "^2.2.2",
+    "scope": null,
     "spec": ">=2.2.2 <3.0.0",
     "type": "range"
   },
@@ -45,7 +36,7 @@
   "_shasum": "7c3aa5382c5eade70cd206880d56a37869630638",
   "_shrinkwrap": null,
   "_spec": "web-animations-js@^2.2.2",
-  "_where": "/Users/mseemann/Documents/Projekte/github/angular2-mdl",
+  "_where": "/Users/mseemannmbpr/Documents/Projekte/github/angular2-mdl",
   "bugs": {
     "url": "https://github.com/web-animations/web-animations-js/issues"
   },
@@ -93,12 +84,12 @@
   "main": "web-animations.min.js",
   "maintainers": [
     {
-      "name": "alancutter",
-      "email": "alancutter@chromium.org"
+      "email": "alancutter@chromium.org",
+      "name": "alancutter"
     },
     {
-      "name": "samthor",
-      "email": "sam.thorogood@gmail.com"
+      "email": "sam.thorogood@gmail.com",
+      "name": "samthor"
     }
   ],
   "name": "web-animations-js",
