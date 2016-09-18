@@ -1,19 +1,15 @@
-import { OnChanges, SimpleChange, ElementRef, Renderer } from '@angular/core';
+import { OnChanges, ElementRef, Renderer } from '@angular/core';
 export declare class MdlBadgeDirective implements OnChanges {
     private elementRef;
     private renderer;
     private el;
     private mdlBadgeContent;
     constructor(elementRef: ElementRef, renderer: Renderer);
-    ngOnChanges(changes: {
-        [key: string]: SimpleChange;
-    }): void;
+    ngOnChanges(): void;
 }
 export declare class MdlBadgeOverlapDirective {
 }
 export declare class MdlBadgeNoBackgroundDirective {
 }
-/** @deprecated */
-export declare const MDL_BADGE_DIRECTIVES: (typeof MdlBadgeDirective | typeof MdlBadgeOverlapDirective)[];
 export declare class MdlBadgeModule {
 }

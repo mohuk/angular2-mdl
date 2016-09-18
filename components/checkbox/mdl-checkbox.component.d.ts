@@ -1,8 +1,10 @@
 import { ElementRef, Renderer } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
+export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class MdlCheckboxComponent implements ControlValueAccessor {
     private elementRef;
     private renderer;
+    private change;
     private value_;
     private el;
     constructor(elementRef: ElementRef, renderer: Renderer);
@@ -16,7 +18,5 @@ export declare class MdlCheckboxComponent implements ControlValueAccessor {
     protected onBlur(): void;
     protected onClick(): void;
 }
-/** @deprecated */
-export declare const MDL_CHECKBOX_DIRECTIVES: typeof MdlCheckboxComponent[];
 export declare class MdlChekboxModule {
 }

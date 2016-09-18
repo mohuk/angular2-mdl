@@ -3,7 +3,5 @@ export declare class MdlSpinnerComponent {
     active: boolean;
     singleColor: boolean;
 }
-/** @deprecated */
-export declare const MDL_SPINNER_DIRECTIVES: typeof MdlSpinnerComponent[];
 export declare class MdlSpinnerModule {
 }

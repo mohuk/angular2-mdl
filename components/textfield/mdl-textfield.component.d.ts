@@ -34,7 +34,7 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     registerOnTouched(fn: any): void;
     ngOnChanges(): void;
     ngDoCheck(): void;
-    protected setFocus(): void;
+    setFocus(): void;
     protected onFocus(event: FocusEvent): void;
     protected onBlur(event: FocusEvent): void;
     private checkDisabled();
@@ -42,7 +42,5 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     private checkDirty();
     keydownTextarea($event: KeyboardEvent): void;
 }
-/** @deprecated */
-export declare const MDL_TEXT_FIELD_DIRECTIVES: typeof MdlTextFieldComponent[];
 export declare class MdlTextFieldModule {
 }

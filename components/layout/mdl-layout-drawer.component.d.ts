@@ -3,5 +3,4 @@ export declare class MdlLayoutDrawerComponent {
     private parentLayout;
     isDrawerVisible: boolean;
     constructor(parentLayout: MdlLayoutComponent);
-    isDrawerDirectChildOf(layout: MdlLayoutComponent): boolean;
 }

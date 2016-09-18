@@ -19,26 +19,26 @@ var packages = {
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
  **********************************************************************************************/
-var barrels = [
-    // Angular specific barrels.
-    '@angular/core',
-    '@angular/forms',
-    '@angular/common',
-    '@angular/compiler',
-    '@angular/http',
-    '@angular/router',
-    '@angular/platform-browser',
-    '@angular/platform-browser-dynamic',
-    // Thirdparty barrels.
-    'rxjs',
-    // App specific barrels.
-    'app',
-    'app/shared',
-];
 var cliSystemConfigPackages = {};
-barrels.forEach(function (barrelName) {
-    cliSystemConfigPackages[barrelName] = { main: 'index' };
-});
+cliSystemConfigPackages['@angular/core'] = { main: 'bundles/core.umd.js' };
+cliSystemConfigPackages['@angular/forms'] = { main: 'bundles/forms.umd.js' };
+cliSystemConfigPackages['@angular/common'] = { main: 'bundles/common.umd.js' };
+cliSystemConfigPackages['@angular/compiler'] = { main: 'bundles/compiler.umd.js' };
+cliSystemConfigPackages['@angular/http'] = { main: 'bundles/http.umd.js' };
+cliSystemConfigPackages['@angular/router'] = { main: 'bundles/router.umd.js' };
+cliSystemConfigPackages['@angular/platform-browser'] = { main: 'bundles/platform-browser.umd.js' };
+cliSystemConfigPackages['@angular/platform-browser-dynamic'] = { main: 'bundles/platform-browser-dynamic.umd.js' };
+cliSystemConfigPackages['rxjs'] = { main: 'index.js' };
+cliSystemConfigPackages['app'] = { main: 'index.js' };
+cliSystemConfigPackages['@angular/core/testing'] = { main: '../bundles/core-testing.umd.js' };
+cliSystemConfigPackages['@angular/common/testing'] = { main: '../bundles/common-testing.umd.js' };
+cliSystemConfigPackages['@angular/compiler/testing'] = { main: '../bundles/compiler-testing.umd.js' };
+cliSystemConfigPackages['@angular/platform-browser/testing'] = { main: '../bundles/platform-browser-testing.umd.js' };
+cliSystemConfigPackages['@angular/platform-browser-dynamic/testing'] = {
+    main: '../bundles/platform-browser-dynamic-testing.umd.js' };
+cliSystemConfigPackages['@angular/http/testing'] = { main: '../bundles/http-testing.umd.js' };
+cliSystemConfigPackages['@angular/router/testing'] = { main: '../bundles/router-testing.umd.js' };
+cliSystemConfigPackages['@angular/forms/testing'] = { main: '../bundles/forms-testing.umd.js' };
 // Apply the CLI SystemJS configuration.
 System.config({
     map: {

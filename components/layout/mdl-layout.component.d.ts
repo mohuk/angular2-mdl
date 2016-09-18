@@ -1,4 +1,4 @@
-import { AfterContentInit, OnDestroy, Renderer, ElementRef, EventEmitter, NgZone, OnChanges, SimpleChanges } from '@angular/core';
+import { AfterContentInit, OnDestroy, Renderer, ElementRef, EventEmitter, OnChanges, SimpleChanges, NgZone } from '@angular/core';
 import { EventManager } from '@angular/platform-browser';
 import { MdlError } from './../common/mdl-error';
 export declare class MdLUnsupportedLayoutTypeError extends MdlError {

@@ -46,7 +46,5 @@ export declare class MdlListItemRippleDirective extends MdlRippleDirective imple
     constructor(elementRef: ElementRef, renderer: Renderer);
     ngOnInit(): void;
 }
-/** @deprecated */
-export declare const MDL_COMMON_DIRECTIVES: (typeof MdlCheckboxRippleDirective | typeof MdlButtonRippleDirective | typeof MdlRadioRippleDirective | typeof MdlIconToggleRippleDirective | typeof MdlSwitchRippleDirective | typeof MdlMenuItemRippleDirective | typeof MdlAnchorRippleDirective | typeof MdlListItemRippleDirective)[];
 export declare class MdlRippleModule {
 }

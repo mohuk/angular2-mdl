@@ -1,4 +1,4 @@
-import { DynamicComponentLoader, Injector, ViewContainerRef, Compiler } from '@angular/core';
+import { Injector, ViewContainerRef, Compiler } from '@angular/core';
 import { MdlError } from '../common/mdl-error';
 export declare class MdlSnackbarError extends MdlError {
     constructor(message: string);
@@ -24,11 +24,12 @@ export interface IMdlSnackbarMessage {
 }
 export declare class MdlSnackbarService {
     private injector;
-    private dynamicComponentLoader;
     private compiler;
     private defaultViewContainerRef;
-    constructor(injector: Injector, dynamicComponentLoader: DynamicComponentLoader, compiler: Compiler);
+    constructor(injector: Injector, compiler: Compiler);
     setDefaultViewContainerRef(vcRef: ViewContainerRef): void;
     showToast(message: string, timeout?: number, vcRef?: ViewContainerRef): Promise<MdlSnackbarComponent>;
     showSnackbar(snackbarMessage: IMdlSnackbarMessage): Promise<MdlSnackbarComponent>;
+}
+export declare class MdlSnackbaModule {
 }

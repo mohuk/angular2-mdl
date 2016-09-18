@@ -37,11 +37,11 @@ footer {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
-nav a[routerLink] {
-  padding: 8px 40px !important;
+nav a[routerLink], nav a.routerLink {
+  padding: 8px 36px !important;
   font-size: 18px !important;
   color: rgb(66,66,66) !important; }
-  nav a[routerLink].router-link-active {
+  nav a[routerLink].router-link-active, nav a.routerLink.router-link-active {
     color: rgb(33,150,243) !important; }
 
 h4 {

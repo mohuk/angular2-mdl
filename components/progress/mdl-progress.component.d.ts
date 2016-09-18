@@ -9,7 +9,5 @@ export declare class MdlProgressComponent implements OnChanges {
     }): void;
     private setBuffer(b);
 }
-/** @deprecated */
-export declare const MDL_PROGRESS_DIRECTIVES: typeof MdlProgressComponent[];
 export declare class MdlProgressModule {
 }
