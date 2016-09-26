@@ -14,6 +14,8 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     type: any;
     label: any;
     pattern: any;
+    min: any;
+    max: any;
     name: any;
     id: string;
     errorMessage: any;
@@ -32,6 +34,7 @@ export declare class MdlTextFieldComponent implements ControlValueAccessor, OnCh
     private onChangeCallback;
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
+    setDisabledState(isDisabled: boolean): void;
     ngOnChanges(): void;
     ngDoCheck(): void;
     setFocus(): void;

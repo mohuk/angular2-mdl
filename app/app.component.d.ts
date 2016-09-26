@@ -1,3 +1,4 @@
+import { ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Router, Routes } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { MdlLayoutComponent } from '../components';
@@ -7,6 +8,8 @@ export declare class Home extends AbstractDemoComponent {
 }
 export declare const appRoutes: Routes;
 export declare class Angular2MdlAppComponent {
+    vcRef: ViewContainerRef;
     title: string;
+    constructor(vcRef: ViewContainerRef);
     componentSelected(mainLayout: MdlLayoutComponent): void;
 }

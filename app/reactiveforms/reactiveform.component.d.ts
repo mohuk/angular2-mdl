@@ -7,6 +7,7 @@ import { Title } from '@angular/platform-browser';
 import { AbstractDemoComponent } from './../abstract-demo.component';
 export declare class ReactiveFormsDemo extends AbstractDemoComponent implements OnInit {
     private fb;
+    disableForm: boolean;
     form: FormGroup;
     firstName: FormControl;
     lastName: FormControl;
@@ -17,4 +18,5 @@ export declare class ReactiveFormsDemo extends AbstractDemoComponent implements 
     constructor(router: Router, route: ActivatedRoute, titleService: Title, fb: FormBuilder);
     ngOnInit(): void;
     onSubmit(): void;
+    onDisableForm(formDisabled: boolean): void;
 }

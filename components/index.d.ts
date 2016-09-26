@@ -4,6 +4,7 @@ export * from './button/mdl-button.component';
 export * from './card/mdl-card.component';
 export * from './checkbox/mdl-checkbox.component';
 export * from './chips/index';
+export * from './dialog/index';
 export * from './icon/mdl-icon.component';
 export * from './list/mdl-list.component';
 export * from './icon-toggle/mdl-icon-toggle.component';

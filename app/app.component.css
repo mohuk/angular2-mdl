@@ -100,7 +100,8 @@ table.docu {
       box-sizing: border-box; }
   table.docu tbody td:first-child {
     font-weight: bold;
-    max-width: 300px; }
+    max-width: 300px;
+    white-space: nowrap; }
   table.docu tbody td {
     vertical-align: top;
     position: relative;

@@ -13,6 +13,7 @@ export declare class MdlRadioComponent implements ControlValueAccessor, OnInit, 
     name: string;
     formControlName: string;
     value: any;
+    disabled: boolean;
     change: EventEmitter<any>;
     optionValue: any;
     checked: boolean;
@@ -26,6 +27,7 @@ export declare class MdlRadioComponent implements ControlValueAccessor, OnInit, 
     deselect(value: any): void;
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
+    setDisabledState(isDisabled: boolean): void;
     protected onFocus(): void;
     protected onBlur(): void;
     protected onClick(): void;
