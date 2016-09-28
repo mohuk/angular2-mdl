@@ -20,6 +20,8 @@ export declare class MdlLayoutComponent implements AfterContentInit, OnDestroy, 
     protected isRipple: boolean;
     isNoDrawer: boolean;
     selectedTabEmitter: EventEmitter<{}>;
+    mouseoverTabEmitter: EventEmitter<{}>;
+    mouseoutTabEmitter: EventEmitter<{}>;
     isDrawerVisible: boolean;
     isSmallScreen: boolean;
     private scrollListener;
@@ -36,6 +38,8 @@ export declare class MdlLayoutComponent implements AfterContentInit, OnDestroy, 
     obfuscatorKeyDown($event: any): void;
     ngOnDestroy(): void;
     tabSelected(tab: any): void;
+    onTabMouseover(tab: any): void;
+    onTabMouseout(tab: any): void;
     closeDrawerOnSmallScreens(): void;
     hasDrawer(): boolean;
 }

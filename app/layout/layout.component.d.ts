@@ -7,6 +7,12 @@ export declare class LayoutDemo extends AbstractDemoComponent {
     tabChanged({index}: {
         index: any;
     }): void;
+    tabMouseover({index}: {
+        index: any;
+    }): void;
+    tabMouseout({index}: {
+        index: any;
+    }): void;
 }
 export declare class Layout0Demo {
 }
